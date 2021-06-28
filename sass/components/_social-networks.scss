@@ -1,0 +1,26 @@
+.social-networks-list {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+}
+.social-networks-list__btn {
+  display: block;
+  width: 44px;
+  height: 44px;
+  color: $icon-color;
+  padding: 12px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $brand-color;
+    color: $light-color;
+  }
+}
+.social-networks-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

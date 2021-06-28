@@ -1,0 +1,22 @@
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 32px;
+  margin: 0 auto;
+  background: $brand-color;
+  font-family: inherit;
+  @include font(bold, 16px, 1.875);
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $light-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $hover-button;
+    cursor: pointer;
+  }
+}
