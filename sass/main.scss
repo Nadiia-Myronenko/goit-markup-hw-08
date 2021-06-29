@@ -1,10 +1,12 @@
 @import "./utils/variables";
+@import "./utils/breakpoints";
+@import "./utils/mixins";
 @import "./components/base";
 @import "./utils/visually-hidden";
-@import "./utils/mixins";
 @import "./components/logo";
 @import "./components/btn";
 @import "./components/social-networks";
+/*
 @import "./components/filter";
 @import "./components/backdrop";
 @import "./components/modal";
@@ -18,4 +20,4 @@
 @import "./components/projects";
 @import "./components/user-data-form";
 @import "./components/footer";
-@import "./components/subscribe-form";
+@import "./components/subscribe-form";*/
