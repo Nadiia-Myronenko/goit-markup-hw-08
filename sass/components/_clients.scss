@@ -1,9 +1,11 @@
 .companies-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
 }
-.companies-list__item:not(:last-child) {
-  margin-right: 30px;
+.companies-list__item {
+  margin: 15px;
 }
 .companies-list__link {
   color: $icon-color;

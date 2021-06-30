@@ -2,14 +2,28 @@
   background: $third-background;
 }
 .team-cards {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -15px;
+    @media screen and (min-width: $mobile) {
+      margin: -15px;
+    }
+  }
 }
 .team-cards__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  &:not(:last-child) {
-    margin-right: 30px;
+  margin-bottom: 15px;
+  @media screen and (min-width: $mobile) {
+    margin: 15px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
   }
 }
 .team-cards__img {

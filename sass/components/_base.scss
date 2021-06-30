@@ -28,7 +28,7 @@ h2 {
   text-align: center;
   color: $hedding-color;
   margin-bottom: 30px;
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
   }
 }
@@ -39,15 +39,15 @@ h2 {
   @media screen and (min-width: $tablet) {
     width: $tablet;
   }
-  @media screen and (min-width: $desctop) {
-    width: $desctop;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
   padding: 0 15px;
   margin: 0 auto;
 }
 .section {
   padding: 60px 0px;
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $desktop) {
     padding: 94px 0;
   }
 }

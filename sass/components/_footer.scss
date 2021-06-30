@@ -2,31 +2,81 @@
   padding: 60px 0;
   color: $light-color;
   background: $secondary-background;
-  min-width: 1200px;
+
+  /*min-width: 1200px;*/
 }
+
 .footer__container {
   display: flex;
-  align-items: baseline;
+  @media screen and (max-width: $desctop - 1) {
+    align-items: center;
+    flex-direction: column;
+  }
+  @media screen and (max-width: $tablet - 1) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    align-items: baseline;
+  }
 }
+.footer__columns-wrapper {
+  display: flex;
+  @media screen and (max-width: $tablet - 1) {
+    align-items: center;
+    flex-direction: column;
+  }
+  @media screen and (min-width: $tablet) {
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
 .adress-and-logo-wrapper {
-  width: 231px;
-  margin-right: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (max-width: $tablet - 1) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-right: 165px;
+  }
+
+  /*width: 231px;
+  margin-right: 70px;*/
 }
 .social-networks-wrapper {
-  margin-right: 93px;
+  /*margin-right: 93px;*/
   width: 206px;
+  @media screen and (max-width: $tablet - 1) {
+    margin-bottom: 60px;
+  }
 }
+
 .footer__logo {
   display: block;
   margin-bottom: 20px;
   margin-right: 0;
   color: $light-color;
 }
+.address-list {
+  display: flex;
+  flex-direction: column;
+  /* @media screen and (max-width: $desktop - 1) {
+    align-items: center;
+  }*/
+}
+
 .address {
   font-style: normal;
 }
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 .address__link {
   color: $footer-link-color;
@@ -49,12 +99,13 @@
 }
 
 .footer__appeal {
+  text-align: center;
   font-weight: bold;
   line-height: 1.143;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-.footer-btn {
+.footer__btn {
   padding: 10px 29px;
 }
