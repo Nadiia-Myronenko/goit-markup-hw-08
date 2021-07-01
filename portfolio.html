@@ -44,13 +44,15 @@
         <section class="section projects">
             <div class="container">
                 <h2 class="hidden">Проэкты</h2>
-                <ul class="filter">
-                    <li class="filter__item"><button class="filter__btn" type="button">Все</button></li>
-                    <li class="filter__item"><button class="filter__btn" type="button">Веб-сайты</button></li>
-                    <li class="filter__item"><button class="filter__btn" type="button">Приложения</button></li>
-                    <li class="filter__item"><button class="filter__btn" type="button">Дизайн</button></li>
-                    <li class="filter__item"><button class="filter__btn" type="button">Маркетинг</button></li>
-                </ul>
+                <div class="filter-holder"></div>
+                    <ul class="filter">
+                        <li class="filter__item"><button class="filter__btn" type="button">Все</button></li>
+                        <li class="filter__item"><button class="filter__btn" type="button">Веб-сайты</button></li>
+                        <li class="filter__item"><button class="filter__btn" type="button">Приложения</button></li>
+                        <li class="filter__item"><button class="filter__btn" type="button">Дизайн</button></li>
+                        <li class="filter__item"><button class="filter__btn" type="button">Маркетинг</button></li>
+                    </ul>
+                </div>
                 <ul class="projects-list">
                     <li class="projects-card">
                         <a class="projects-card__link" href="/">
@@ -203,50 +205,52 @@
     <!--Подвал страницы-->
     <footer class="footer">
         <div class="container footer__container">
-            <div class="adress-and-logo-wrapper">
-                <a class="logo footer__logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
-                <address class="address">
-                    <ul>
-                        <li class="address__item">
-                            <p>г. Киев, пр-т Леси Украинки, 26</p>
-                        </li>
-                        <li class="address__item"><a class="address__link"
-                                href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="address__item"><a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
-                        </li>
+            <div class="footer__columns-wrapper">
+                <div class="adress-and-logo-wrapper">
+                    <a class="logo footer__logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+                    <address class="address">
+                        <ul class="address-list">
+                            <li class="address__item">
+                                <p>г. Киев, пр-т Леси Украинки, 26</p>
+                            </li>
+                            <li class="address__item"><a class="address__link"
+                                    href="mailto:info@example.com">info@example.com</a></li>
+                            <li class="address__item"><a class="address__link" href="tel:+380991111111">+38 099 111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="social-networks-wrapper">
+                    <p class="footer__appeal">присоединяйтесь</p>
+                    <ul class="social-networks-list">
+                        <li class="social-networks-list__item"><a
+                                class="social-networks-list__btn social-networks-list__btn--darkbg" href="/"><svg
+                                    class="social-networks-list__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#instagram"></use>
+                                </svg></a></li>
+                        <li class="social-networks-list__item"><a
+                                class="social-networks-list__btn social-networks-list__btn--darkbg" href="/"><svg
+                                    class="social-networks-list__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#twitter"></use>
+                                </svg></a></li>
+                        <li class="social-networks-list__item"><a
+                                class="social-networks-list__btn social-networks-list__btn--darkbg" href="/"><svg
+                                    class="social-networks-list__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#facebook"></use>
+                                </svg></a></li>
+                        <li class="social-networks-list__item"><a
+                                class="social-networks-list__btn social-networks-list__btn--darkbg" href="/"><svg
+                                    class="social-networks-list__icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#linkedin"></use>
+                                </svg></a></li>
                     </ul>
-                </address>
-            </div>
-            <div class="social-networks-wrapper">
-                <p class="footer__appeal">присоединяйтесь</p>
-                <ul class="social-networks-list">
-                    <li class="social-networks-list__item"><a
-                            class="social-networks-list__btn social-networks-list__btn--darkbg" href="/"><svg
-                                class="social-networks-list__icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#instagram"></use>
-                            </svg></a></li>
-                    <li class="social-networks-list__item"><a
-                            class="social-networks-list__btn social-networks-list__btn--darkbg" href="/"><svg
-                                class="social-networks-list__icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#twitter"></use>
-                            </svg></a></li>
-                    <li class="social-networks-list__item"><a
-                            class="social-networks-list__btn social-networks-list__btn--darkbg" href="/"><svg
-                                class="social-networks-list__icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#facebook"></use>
-                            </svg></a></li>
-                    <li class="social-networks-list__item"><a
-                            class="social-networks-list__btn social-networks-list__btn--darkbg" href="/"><svg
-                                class="social-networks-list__icon" width="20" height="20">
-                                <use href="./images/symbol-defs.svg#linkedin"></use>
-                            </svg></a></li>
-                </ul>
+                </div>
             </div>
             <form class="subscribe-form">
                 <p class="footer__appeal">Подпишитесь на рассылку</p>
                 <div class="form-field">
                     <input class="email-input" type="email" name="e-mail" placeholder="E-mail" />
-                    <button class="btn" type="submit">Подписаться<svg class="send-icon">
+                    <button class="btn footer__btn" type="submit">Подписаться<svg class="send-icon" width="24" height="24">
                             <use href="./images/symbol-defs.svg#send"></use>
                         </svg></button>
                 </div>
