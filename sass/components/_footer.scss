@@ -8,7 +8,7 @@
 
 .footer__container {
   display: flex;
-  @media screen and (max-width: $desctop - 1) {
+  @media screen and (max-width: $desktop - 1) {
     align-items: center;
     flex-direction: column;
   }
@@ -35,7 +35,9 @@
 
 .adress-and-logo-wrapper {
   display: flex;
-  align-items: center;
+  @media screen and (max-width: $desktop - 1) {
+    align-items: center;
+  }
   flex-direction: column;
   @media screen and (max-width: $tablet - 1) {
     margin-bottom: 60px;
@@ -43,15 +45,18 @@
   @media screen and (min-width: $tablet) {
     margin-right: 165px;
   }
-
-  /*width: 231px;
-  margin-right: 70px;*/
+  @media screen and (min-width: $desktop) {
+    width: 231px;
+    margin-right: 70px;
+  }
 }
 .social-networks-wrapper {
-  /*margin-right: 93px;*/
   width: 206px;
   @media screen and (max-width: $tablet - 1) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
   }
 }
 
@@ -64,9 +69,9 @@
 .address-list {
   display: flex;
   flex-direction: column;
-  /* @media screen and (max-width: $desktop - 1) {
+  @media screen and (max-width: $desktop - 1) {
     align-items: center;
-  }*/
+  }
 }
 
 .address {
@@ -99,7 +104,9 @@
 }
 
 .footer__appeal {
-  text-align: center;
+  @media screen and (max-width: $desktop - 1) {
+    text-align: center;
+  }
   font-weight: bold;
   line-height: 1.143;
   text-transform: uppercase;
