@@ -4,17 +4,21 @@
 .user-data-form__appeal {
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: $hedding-color;
   margin-bottom: 12px;
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }
 .form-label {
+  color: $hedding-color;
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
-  @include font(12px, 1.167, 0.01em);
   display: flex;
   flex-direction: column;
 }
@@ -23,6 +27,7 @@
   position: relative;
 }
 .form-label__text {
+  color: $main-text-color;
   margin-bottom: 4px;
 }
 .form-input {
@@ -77,11 +82,13 @@
 }
 
 .concent-check-label {
-  display: flex;
-  align-items: center;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.16;
+  display: block;
 }
 .concent-check__icon {
+  display: inline-block;
   width: 16px;
   height: 15px;
   border: 2px solid $hedding-color;

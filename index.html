@@ -21,13 +21,39 @@
         <div class="container header-block__container">
             <nav class="nav-block">
                 <a class="logo header__logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+                <button class="nav-button" type="button" data-menu-button aria-expanded="false" aria-controls="menu-container">
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-nav" href="./images/symbol-defs.svg#nav-icon"></use>
+                        <use class="icon-cross" href="./images/symbol-defs.svg#cross2"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="navigation">
+                    <li class="navigation__item"><a class="navigation__link navigation__link--active" href="/">Студия</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="/">Контакты</a></li>
+                    </ul>
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="contacts-list__item"><a class="contacts-list__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    <ul class="social-menu">
+                        <li><a href="/">Instagram</a></li>
+                        <li><a href="/">Twitter</a></li>
+                        <li><a href="/">Facebook</a></li>
+                        <li><a href="/">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <!--
                 <ul class="main-nav">
                     <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="/">Студия</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="main-nav__item"><a class="main-nav__link" href="/">Контакты</a></li>
-                </ul>
+                </ul>-->
             </nav>
-            <ul class="adress-list">
+            <!--<ul class="adress-list">
                 <li class="adress-list__item"><a class="adress-list__link" href="mailto:info@devstudio.com"><svg
                             class="adress-list__icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#envelope"></use>
@@ -38,7 +64,7 @@
                             <use href="./images/symbol-defs.svg#smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
-            </ul>
+            </ul>-->
         </div>
     </header>
     <!--Основной контент страницы-->
@@ -375,6 +401,7 @@
             </form>
         </div>
     </footer>
+  <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
