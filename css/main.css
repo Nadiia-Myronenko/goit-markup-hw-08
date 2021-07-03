@@ -876,6 +876,12 @@ h2 {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .projects-card {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects-card {
     width: 354px;
