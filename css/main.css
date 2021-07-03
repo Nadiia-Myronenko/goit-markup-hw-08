@@ -484,15 +484,26 @@ h2 {
   letter-spacing: 0.02em;
   color: $hedding-color;
   text-decoration: none;
-}
+}*/
 .adress-list {
   display: none;
-  @media screen and (min-width: $tablet) {
+}
+
+@media screen and (min-width: 768px) {
+  .adress-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: right;
-    align-items: center;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+
+/*
 .adress-list__item {
   &:not(:first-child) {
     margin-left: 50px;
@@ -852,6 +863,9 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: -30px;
   margin-bottom: -30px;
 }

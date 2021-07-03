@@ -102,7 +102,7 @@
   letter-spacing: 0.02em;
   color: $hedding-color;
   text-decoration: none;
-}
+}*/
 .adress-list {
   display: none;
   @media screen and (min-width: $tablet) {
@@ -110,7 +110,7 @@
     justify-content: right;
     align-items: center;
   }
-}
+} /*
 .adress-list__item {
   &:not(:first-child) {
     margin-left: 50px;
