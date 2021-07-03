@@ -135,7 +135,7 @@ h2 {
   right: 10px;
 }
 
-.mobile-nav-button:hover, .mobile-nav-button:focus {
+.mobile-nav-button:active {
   color: #2196f3;
 }
 
