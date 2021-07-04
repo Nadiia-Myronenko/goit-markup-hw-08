@@ -378,8 +378,13 @@ h2 {
 
 .header-block {
   height: 60px;
-  /* padding-top: 16px;*/
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (max-width: 767px) {
+  .header-block {
+    padding-top: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -398,6 +403,7 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .nav-block {

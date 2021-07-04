@@ -1,6 +1,8 @@
 .header-block {
   height: 60px;
-  /* padding-top: 16px;*/
+  @media screen and (max-width: $tablet - 1) {
+    padding-top: 16px;
+  }
   border-bottom: 1px solid $border-color;
   @media screen and (min-width: $tablet) {
     min-height: 80px;
@@ -10,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 .nav-block {
   width: 100%;
