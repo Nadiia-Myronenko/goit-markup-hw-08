@@ -1,16 +1,19 @@
 .header-block {
   height: 60px;
-  padding-top: 16px;
-  /*min-height: 80px;*/
+  /* padding-top: 16px;*/
+  border-bottom: 1px solid $border-color;
+  @media screen and (min-width: $tablet) {
+    min-height: 80px;
+  }
 }
 .header-block__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav-block {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .mobile-nav {
@@ -27,15 +30,6 @@
 }
 .mobile-nav.is-open {
   display: block;
-}
-
-.main-nav {
-  display: none;
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
 }
 .mobile-menu {
   font-weight: 500;
@@ -110,11 +104,16 @@
     padding-left: 10px;
   }
 }
-/*
-.main-nav__item {
-  &:not(:first-child) {
-    margin-left: 50px;
+/* For tablet and desctop */
+.main-nav {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
   }
+}
+.main-nav__item:not(:first-child) {
+  margin-left: 50px;
 }
 .main-nav__link {
   position: relative;
@@ -124,17 +123,26 @@
   letter-spacing: 0.02em;
   color: $hedding-color;
   text-decoration: none;
-}*/
+}
 .adress-list {
   display: none;
   @media screen and (min-width: $tablet) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: right;
     align-items: center;
   }
-} /*
-.adress-list__item {
-  &:not(:first-child) {
+}
+.adress-list__item:not(:last-child) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    margin-bottom: 10px;
+  }
+}
+
+.adress-list__item:not(:first-child) {
+  @media screen and (min-width: $desktop) {
     margin-left: 50px;
   }
 }
@@ -147,8 +155,7 @@
   text-decoration: none;
   color: $main-text-color;
 }
-.main-nav__link,
-.adress-list__link {
+.main-nav__link {
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
@@ -175,8 +182,4 @@
 .adress-list__icon {
   fill: currentColor;
   margin-right: 10px;
-}
-*/
-.header-block {
-  border-bottom: 1px solid $border-color;
 }

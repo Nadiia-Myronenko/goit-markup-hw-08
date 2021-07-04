@@ -378,8 +378,14 @@ h2 {
 
 .header-block {
   height: 60px;
-  padding-top: 16px;
-  /*min-height: 80px;*/
+  /* padding-top: 16px;*/
+  border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .header-block {
+    min-height: 80px;
+  }
 }
 
 .header-block__container {
@@ -389,6 +395,9 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav-block {
@@ -396,9 +405,6 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -419,24 +425,6 @@ h2 {
 
 .mobile-nav.is-open {
   display: block;
-}
-
-.main-nav {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 .mobile-menu {
@@ -544,26 +532,47 @@ h2 {
   }
 }
 
-/*
-.main-nav__item {
-  &:not(:first-child) {
-    margin-left: 50px;
+/* For tablet and desctop */
+.main-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+
+.main-nav__item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .main-nav__link {
   position: relative;
   display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: $hedding-color;
+  color: #212121;
   text-decoration: none;
-}*/
+}
+
 .adress-list {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
+  .adress-list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .adress-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -577,36 +586,51 @@ h2 {
   }
 }
 
-/*
-.adress-list__item {
-  &:not(:first-child) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .adress-list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adress-list__item:not(:first-child) {
     margin-left: 50px;
   }
 }
+
 .adress-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   vertical-align: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: $main-text-color;
+  color: #757575;
 }
-.main-nav__link,
-.adress-list__link {
+
+.main-nav__link {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .main-nav__link:hover,
 .main-nav__link:focus,
 .main-nav__link--active,
 .adress-list__link:hover,
 .adress-list__link:focus {
-  color: $brand-color;
+  color: #2196f3;
 }
+
 .main-nav__link--active::after {
   position: absolute;
   bottom: -1px;
@@ -615,15 +639,12 @@ h2 {
   height: 4px;
   width: 100%;
   border-radius: 2px;
-  background-color: $brand-color;
+  background-color: #2196f3;
 }
+
 .adress-list__icon {
   fill: currentColor;
   margin-right: 10px;
-}
-*/
-.header-block {
-  border-bottom: 1px solid #ececec;
 }
 
 .hero {
@@ -931,6 +952,10 @@ h2 {
   height: 60px;
 }
 
+.projects-list {
+  margin-bottom: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .projects-list {
     display: -webkit-box;
@@ -942,12 +967,12 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
     margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 
 .projects-card {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -960,7 +985,6 @@ h2 {
   .projects-card {
     width: 354px;
     margin-right: 30px;
-    margin-bottom: 30px;
   }
 }
 
