@@ -387,16 +387,7 @@ h2 {
 }
 
 .mobile-nav.is-open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
 }
 
 .main-nav {
@@ -418,17 +409,29 @@ h2 {
 }
 
 .mobile-menu {
-  /*margin-bottom: 302px;*/
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02;
+  margin-bottom: 37.94vh;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    margin-bottom: 302px;
+  }
 }
 
 .mobile-menu__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 4.02vh;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .mobile-menu__link {
-  font-size: 8.333vmin;
+  font-size: 8.333vw;
   line-height: 1.175;
   color: #212121;
 }
@@ -437,27 +440,40 @@ h2 {
   color: #2196f3;
 }
 
+@media screen and (min-width: 480px) {
+  .mobile-menu__link {
+    font-size: 40px;
+  }
+}
+
 .mobile-contacts-list {
-  margin-bottom: 64px;
+  margin-bottom: 8.04vh;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-contacts-list {
+    margin-bottom: 64px;
+  }
 }
 
 .mobile-contacts-list__tel {
-  font-size: 7.083vmin;
+  font-size: 7.083vw;
   display: block;
   line-height: 1.176;
   color: #2196f3;
-  margin-bottom: 32px;
+  margin-bottom: 4.02vh;
 }
 
 @media screen and (min-width: 480px) {
   .mobile-contacts-list__tel {
     font-size: 34px;
+    margin-bottom: 32px;
   }
 }
 
 .mobile-contacts-list__email {
   display: block;
-  font-size: 5vmin;
+  font-size: 5vw;
   line-height: 1.167;
   color: #757575;
 }
@@ -471,18 +487,30 @@ h2 {
 
 .mobile-social__link {
   display: block;
-  font-size: 3.75vmin;
+  font-size: 3.75vw;
   line-height: 1.22;
   color: #2196f3;
 }
 
 .mobile-social__item:not(:last-child) .mobile-social__link {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 10px;
+  padding-right: 2.083vw;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-social__item:not(:last-child) .mobile-social__link {
+    padding-right: 10px;
+  }
 }
 
 .mobile-social__item:not(:first-child) .mobile-social__link {
-  padding-left: 10px;
+  padding-left: 2.083vw;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-social__item:not(:first-child) .mobile-social__link {
+    padding-left: 10px;
+  }
 }
 
 /*
