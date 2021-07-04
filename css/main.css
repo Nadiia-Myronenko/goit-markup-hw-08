@@ -225,6 +225,37 @@ h2 {
   fill: currentColor;
 }
 
+.close-btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+
+.close-btn:hover, .close-btn:focus {
+  cursor: pointer;
+  color: #2196f3;
+}
+
+.close-btn__icon {
+  width: 11px;
+  height: 11px;
+  fill: currentColor;
+}
+
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -900,23 +931,23 @@ h2 {
   height: 60px;
 }
 
-.projects-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-right: -30px;
-  margin-bottom: -30px;
+@media screen and (min-width: 768px) {
+  .projects-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
 }
 
 .projects-card {
   width: 100%;
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -928,6 +959,8 @@ h2 {
 @media screen and (min-width: 768px) {
   .projects-card {
     width: 354px;
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
