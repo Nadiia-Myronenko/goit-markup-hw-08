@@ -13,9 +13,13 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  position: relative;
 }
+
 .nav-block {
-  width: 100%;
+  @media screen and (max-width: $tablet - 1) {
+    width: 100%;
+  }
   display: flex;
   align-items: center;
 }
