@@ -3,7 +3,6 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin-right: -30px;
   }
 }
@@ -35,8 +34,8 @@
 }
 
 .projects-card__img {
-  display: block;
   width: 100%;
+  height: auto;
 }
 .projects-card__content {
   padding: 20px 24px;

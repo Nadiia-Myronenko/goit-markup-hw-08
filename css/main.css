@@ -1067,9 +1067,6 @@ body.modal-open {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-right: -30px;
   }
 }
@@ -1119,8 +1116,8 @@ body.modal-open {
 }
 
 .projects-card__img {
-  display: block;
   width: 100%;
+  height: auto;
 }
 
 .projects-card__content {
