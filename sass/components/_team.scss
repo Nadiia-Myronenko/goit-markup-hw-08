@@ -27,8 +27,8 @@
   }
 }
 .team-cards__img {
-  display: block;
-  min-width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .team-cards__content-wrapper {
   padding: 30px 32px;

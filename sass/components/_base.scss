@@ -51,6 +51,40 @@ h2 {
     padding: 94px 0;
   }
 }
-/*body.modal-open {
+body.modal-open {
   overflow: hidden;
-}*/
+}
+
+.img_mobile {
+  @media screen and (max-width: $mobile) {
+    display: block;
+  }
+  @media screen and (min-width: $mobile + 1) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet + 1) {
+    display: none;
+  }
+}
+.img_tablet {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+  @media screen and (min-width: $mobile + 1) {
+    display: block;
+  }
+  @media screen and (min-width: $tablet + 1) {
+    display: none;
+  }
+}
+.img_desktop {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+  @media screen and (min-width: $mobile + 1) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet + 1) {
+    display: block;
+  }
+}
